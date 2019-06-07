@@ -3,7 +3,7 @@ from . import views
 from . import tables
 app_name = 'fires'
 
-urlpatterns = [
-		path('fires/', views.fires, name='fires'),
-		path('', views.fires, name='index'),
-	      ]
+urlpatterns = [path('skogsstyrelsen/', views.skogsstyrelsen, name='fires'),
+		       path('fires/', views.fires, name='fires'),
+		       path('', views.fires, name='index'),
+	          ]
